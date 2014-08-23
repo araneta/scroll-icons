@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+<head> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">			
+	<link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">	
+	<link rel="stylesheet" href="css/smoothTouchScroll.css" type="text/css" />
+	<style>
+		#TouchScroller
+		{
+			width:400px;	
+			position: relative;
+			background-color:#00aff0;
+			padding:5px 5px 8px;
+			border-radius:20px;
+		}
+		#TouchScroller div.scrollableArea *
+		{
+			position: relative;
+			display: block;
+			float: left;
+			padding: 0;
+			margin:0 2px;
+		}
+		
+		#TouchScroller div.scrollableArea .fa{
+			-webkit-transform: scale(1,1);
+			-webkit-transition-timing-function: ease-out;
+			-webkit-transition-duration: 250ms;
+			-moz-transform: scale(1,1);
+			-moz-transition-timing-function: ease-out;
+			-moz-transition-duration: 250ms;
+			
+			width:98px;
+			height:80px;
+			font-size:80px;
+			color:#ffffff;
+			padding:10px 0;
+		}
+		#TouchScroller div.scrollableArea .fa:hover{
+			-webkit-transform: scale(1.05,1.07);
+			-webkit-transition-timing-function: ease-out;
+			-webkit-transition-duration: 250ms;
+			-moz-transform: scale(1.05,1.07);
+			-moz-transition-timing-function: ease-out;
+			-moz-transition-duration: 250ms;
+			position: relative;
+			margin-top:-5px !important;
+		}
+
+	</style>	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.kinetic.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smoothTouchScroll.js"></script>		
+	<script type="text/javascript" src="js/main.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function() {	
+			$("#TouchScroller").smoothTouchScroll({ 
+				continuousScrolling: false
+			});
+			
+		});
+
+	</script>
+</head>	
+<body>	
+	<div id="TouchScroller">				
+		<div class="scrollableArea">
+			<i class="fa fa-cogs"></i>							
+			<i class="fa fa-bullhorn"></i>
+			<i class="fa fa-building-o"></i>
+			<i class="fa fa-calendar"></i>
+			<i class="fa fa-search"></i>
+			<i class="fa fa-bullseye"></i>
+			<i class="fa fa-gamepad"></i>
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-certificate"></i>
+			<i class="fa fa-caret-square-o-up"></i>
+			<i class="fa fa-caret-square-o-right"></i>
+			<i class="fa fa-caret-square-o-left"></i>
+		</div>					
+	</div>	
+</body>
+</html>
